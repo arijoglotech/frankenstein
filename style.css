@@ -122,6 +122,10 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .top-area {
+    margin-bottom: 100px;
+  }
+
   .buttons .btn {
     margin-bottom: 30px;
   }
