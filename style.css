@@ -121,7 +121,7 @@ body {
   animation-name: tada;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 576px) {
   .buttons .btn {
     margin-bottom: 30px;
   }
