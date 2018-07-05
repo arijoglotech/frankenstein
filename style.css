@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Chewy");
+body {
+  background-color: #f9ca24;
+  color: #222f3e;
+}
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.top-area .logo {
+  width: 180px;
+  height: 180px;
+  padding: 30px;
+  border-radius: 60px;
+  background-color: #e4b306;
+  box-shadow: 0px 14px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+.top-area .logo > img {
+  width: auto;
+  max-width: 100%;
+}
+.top-area .caption {
+  width: auto;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.top-area .caption h1 {
+  font-family: "Chewy", cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px #b28c05;
+}
+.top-area .caption p {
+  color: #b28c05;
+  font-size: 1.125rem;
+}
+
+.buttons {
+  display: block;
+  padding: 0 30px;
+}
+.buttons .btn {
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.buttons .btn.dashed {
+  background: transparent;
+  border: 2px dashed #ffffff;
+  color: #222f3e;
+}
+.buttons .btn.btn-success {
+  background: #6ab04c;
+  border-color: transparent;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+@media only screen and (max-width: 360px) {
+  .buttons .btn {
+    margin-bottom: 30px;
+  }
+}
